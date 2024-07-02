@@ -17,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body className={inter.className}>
          <ThemeProvider
             attribute="class"
@@ -24,7 +25,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-              <div className="container mx-auto p-4">
+              <div className="container  p-4">
 
         <Header />
 
