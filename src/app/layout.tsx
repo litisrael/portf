@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import {ThemeProvider} from "@/components/ThemeProvider";
+// import { SideBox } from "@/components/side";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,9 +26,15 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-              <div className="container  p-4">
+              <div className="container h-dvh  p-4">
 
         <Header />
+        {/* <SideBox items={
+        <div>
+          <h1>Hello, World!</h1>
+          <p>This is a sample content inside SideBox.</p>
+        </div>
+      } /> */}
 
         {children}
               </div>
